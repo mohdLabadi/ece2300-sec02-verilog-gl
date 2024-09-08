@@ -14,7 +14,12 @@ module PairTripleDetectorGL
 );
 
   //''' ACTIVITY '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-  // Implement pair/triple detector using explicit gate-level modeling
+  
+  
+  assign out = or(and (in1, not(in0)), and(in1, in0));
+
+  
+  Implement pair/triple detector using explicit gate-level modeling
   //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 endmodule
